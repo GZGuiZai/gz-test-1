@@ -174,4 +174,5 @@ async def inbox(ctx):
 
 
 client.loop.create_task(change_status())
-client.run(TOKEN)
+#client.run(TOKEN)
+client.run(os.getenv('TOKEN'))
